@@ -12,7 +12,7 @@ Based on AWS best practices (SAA-C03), these labs cover:
 * **Continuous Integration:** Automating builds and tests with AWS CodeBuild.
 * **Deployment Targets:** Provisioning and tagging EC2 instances for automated deployments.
 * **Continuous Deployment:** Automating application updates with AWS CodeDeploy.
-* **Pipeline Orchestration:** (Upcoming) Linking stages together with AWS CodePipeline.
+* **Pipeline Orchestration:** Linking stages together with AWS CodePipeline for full automation.
 * **Infrastructure as Code:** (Upcoming) Automating resource provisioning within the pipeline.
 
 ## ⚙️ Prerequisites
@@ -44,3 +44,4 @@ Based on AWS best practices (SAA-C03), these labs cover:
 3. [Lab 3: Continuous Integration (AWS CodeBuild)](./labs/lab3-codebuild-project/README.md)
 4. [Lab 4: Provisioning Deployment Targets (EC2)](./labs/lab4-ec2-deployment-target/README.md)
 5. [Lab 5: Continuous Deployment (AWS CodeDeploy)](./labs/lab5-codedeploy-setup/README.md)
+6. [Lab 6: Pipeline Orchestration (AWS CodePipeline)](./labs/lab6-codepipeline-orchestration/README.md)
