@@ -1,0 +1,11 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  PipelineMonitoringRule:
+    Type: 'AWS::Events::Rule'
+    Properties:
+      Name: WebAppPipelineMonitoring
+      Description: Monitor state changes for the CI/CD pipeline
+      EventPattern:
+        Source: [aws.codepipeline]
+        Detail-Type: [CodePipeline Pipeline Execution State Change]
+        Detail: {Pipeline: [WebApp-CI-CD-Pipeline]}

@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Parameters:
+  DeployRoleArn: {Type: String}
+Resources:
+  DeployApplication:
+    Type: 'AWS::CodeDeploy::Application'
+    Properties: {ApplicationName: WebAppDeploy, ComputePlatform: Server}
+  DeploymentGroup:
+    Type: 'AWS::CodeDeploy::DeploymentGroup'
+    Properties:
+      ApplicationName: !Ref DeployApplication
+      DeploymentGroupName: DevDeploymentGroup
+      ServiceRoleArn: !Ref DeployRoleArn
+      DeploymentConfigName: CodeDeployDefault.OneAtATime
+      Ec2TagFilters: [{Key: Environment, Value: Dev, Type: KEY_AND_VALUE}]

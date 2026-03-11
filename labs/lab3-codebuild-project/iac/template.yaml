@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Parameters:
+  BuildRoleArn: {Type: String}
+Resources:
+  CodeBuildProject:
+    Type: 'AWS::CodeBuild::Project'
+    Properties:
+      Name: WebAppBuild
+      ServiceRole: !Ref BuildRoleArn
+      Artifacts: {Type: NO_ARTIFACTS}
+      Environment:
+        Type: LINUX_CONTAINER
+        ComputeType: BUILD_GENERAL1_SMALL
+        Image: aws/codebuild/amazonlinux2-x86_64-standard:3.0
+      Source:
+        Type: CODECOMMIT
+        Location: !Sub 'https://git-codecommit.${AWS::Region}.amazonaws.com/v1/repos/portfolio-web-app'

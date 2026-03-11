@@ -1,0 +1,26 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  ArtifactBucket:
+    Type: 'AWS::S3::Bucket'
+    Properties: {BucketName: cicd-artifact-store}
+  CodeBuildRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      RoleName: CodeBuildServiceRole
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement: [{Effect: Allow, Principal: {Service: codebuild.amazonaws.com}, Action: sts:AssumeRole}]
+  CodeDeployRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      RoleName: CodeDeployServiceRole
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement: [{Effect: Allow, Principal: {Service: codedeploy.amazonaws.com}, Action: sts:AssumeRole}]
+  CodePipelineRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      RoleName: CodePipelineServiceRole
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement: [{Effect: Allow, Principal: {Service: codepipeline.amazonaws.com}, Action: sts:AssumeRole}]
