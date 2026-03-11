@@ -10,6 +10,7 @@ Based on AWS best practices (SAA-C03), these labs cover:
 * **Source Control:** Managing private Git repositories with Amazon CodeCommit.
 * **Pipeline Infrastructure:** Provisioning S3 artifact storage and IAM service roles.
 * **Continuous Integration:** Automating builds and tests with AWS CodeBuild.
+* **Deployment Targets:** Provisioning and tagging EC2 instances for automated deployments.
 * **Continuous Deployment:** (Upcoming) Automating application updates with AWS CodeDeploy.
 * **Pipeline Orchestration:** (Upcoming) Linking stages together with AWS CodePipeline.
 * **Infrastructure as Code:** (Upcoming) Automating resource provisioning within the pipeline.
@@ -35,9 +36,10 @@ Based on AWS best practices (SAA-C03), these labs cover:
 > [!IMPORTANT]
 > **Cumulative Architecture:** These labs are designed as a cumulative scenario. You are building an evolving CI/CD infrastructure.
 >
-> **Session Persistence:** These labs rely on bash variables (like `$BUILD_ROLE`, `$PIPELINE_ROLE`, etc.). Run all commands in the same terminal session to maintain context.
+> **Session Persistence:** These labs rely on bash variables (like `$BUILD_ROLE`, `$PIPELINE_ROLE`, `$AMI_ID`, etc.). Run all commands in the same terminal session to maintain context.
 
 ## 📚 Labs Index
 1. [Lab 1: Source Control (AWS CodeCommit)](./labs/lab1-codecommit-repo/README.md)
 2. [Lab 2: Artifact Storage & IAM Foundations](./labs/lab2-artifacts-iam/README.md)
 3. [Lab 3: Continuous Integration (AWS CodeBuild)](./labs/lab3-codebuild-project/README.md)
+4. [Lab 4: Provisioning Deployment Targets (EC2)](./labs/lab4-ec2-deployment-target/README.md)
