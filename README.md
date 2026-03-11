@@ -9,7 +9,7 @@ This repository contains hands-on labs demonstrating core AWS DevOps concepts, f
 Based on AWS best practices (SAA-C03), these labs cover:
 * **Source Control:** Managing private Git repositories with Amazon CodeCommit.
 * **Pipeline Infrastructure:** Provisioning S3 artifact storage and IAM service roles.
-* **Continuous Integration:** (Upcoming) Building and testing code with AWS CodeBuild.
+* **Continuous Integration:** Automating builds and tests with AWS CodeBuild.
 * **Continuous Deployment:** (Upcoming) Automating application updates with AWS CodeDeploy.
 * **Pipeline Orchestration:** (Upcoming) Linking stages together with AWS CodePipeline.
 * **Infrastructure as Code:** (Upcoming) Automating resource provisioning within the pipeline.
@@ -40,3 +40,4 @@ Based on AWS best practices (SAA-C03), these labs cover:
 ## 📚 Labs Index
 1. [Lab 1: Source Control (AWS CodeCommit)](./labs/lab1-codecommit-repo/README.md)
 2. [Lab 2: Artifact Storage & IAM Foundations](./labs/lab2-artifacts-iam/README.md)
+3. [Lab 3: Continuous Integration (AWS CodeBuild)](./labs/lab3-codebuild-project/README.md)
