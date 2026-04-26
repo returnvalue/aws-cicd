@@ -1,7 +1,6 @@
 # Lab 1: Source Control (AWS CodeCommit)
 
 **Goal:** Create a secure, private Git repository to hold our application code, `buildspec.yml`, and `appspec.yml` files.
-
 ```bash
 # Create the CodeCommit repository
 REPO_URL=$(awslocal codecommit create-repository \

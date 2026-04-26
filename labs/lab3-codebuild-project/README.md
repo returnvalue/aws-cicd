@@ -1,7 +1,6 @@
 # Lab 3: Continuous Integration (AWS CodeBuild)
 
 **Goal:** Create a CodeBuild project that pulls code from CodeCommit, looks for a `buildspec.yml` file, runs the build commands, and outputs the result.
-
 ```bash
 # Create the CodeBuild project
 awslocal codebuild create-project \

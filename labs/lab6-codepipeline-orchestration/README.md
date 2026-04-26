@@ -1,7 +1,6 @@
 # Lab 6: Pipeline Orchestration (AWS CodePipeline)
 
 **Goal:** Stitch Source, Build, and Deploy stages together. CodePipeline automates the flow: when a commit happens in CodeCommit, it triggers CodeBuild, takes the output artifact, passes it to S3, and hands it to CodeDeploy for installation.
-
 ```bash
 # 1. Create the Pipeline JSON definition
 cat <<EOF > pipeline.json

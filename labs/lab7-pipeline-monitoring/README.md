@@ -1,7 +1,6 @@
 # Lab 7: Pipeline Execution & Monitoring
 
 **Goal:** Manually trigger the pipeline to simulate a developer pushing code, and check the real-time execution status of each stage to ensure successful delivery.
-
 ```bash
 # 1. Start a pipeline execution
 awslocal codepipeline start-pipeline-execution \

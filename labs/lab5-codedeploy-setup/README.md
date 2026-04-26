@@ -1,7 +1,6 @@
 # Lab 5: Continuous Deployment (AWS CodeDeploy)
 
 **Goal:** Create a CodeDeploy Application and a Deployment Group. The Deployment Group tells AWS to look for any EC2 instances tagged with `Environment=Dev` and deploy the code to them using the instructions in the `appspec.yml` file.
-
 ```bash
 # 1. Create the CodeDeploy Application
 awslocal deploy create-application \

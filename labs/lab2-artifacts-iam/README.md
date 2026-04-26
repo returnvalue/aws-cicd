@@ -1,7 +1,6 @@
 # Lab 2: Artifact Storage & IAM Foundations
 
 **Goal:** CodePipeline needs a place to store files as they move between stages. We will create an S3 Artifact Bucket and the foundational IAM Trust Policies for the Build, Deploy, and Pipeline services.
-
 ```bash
 # 1. Create the S3 Artifact Bucket
 awslocal s3api create-bucket --bucket cicd-artifact-store

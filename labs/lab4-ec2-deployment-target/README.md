@@ -1,7 +1,6 @@
 # Lab 4: Provisioning Deployment Targets (EC2)
 
 **Goal:** We need servers to deploy our application to. We will provision a simulated EC2 instance and tag it with `Environment=Dev`. CodeDeploy will use this tag to know where to install the code.
-
 ```bash
 # 1. Fetch a valid AMI ID
 AMI_ID=$(awslocal ec2 describe-images --query 'Images[0].ImageId' --output text)
